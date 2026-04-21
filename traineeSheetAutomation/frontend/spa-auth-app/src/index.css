@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap');
+
+:root {
+  /* Pastel Palette */
+  --bg-primary: #FDFBF7;
+  --bg-secondary: #FAFAFA;
+  --pastel-pink: #FDE8E9;
+  --pastel-pink-darker: #f5cfd1;
+  --pastel-blue: #E2F0F9;
+  --pastel-blue-darker: #c6dfef;
+  --pastel-mint: #E8F5E9;
+  --pastel-peach: #FFF0E6;
+  --pastel-lavender: #F4E8F8;
+  
+  --text-primary: #5A5A5A;
+  --text-secondary: #8A8A8A;
+  --text-light: #B0B0B0;
+  
+  --border-radius-lg: 24px;
+  --border-radius-md: 16px;
+  --border-radius-sm: 8px;
+  
+  --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.03);
+  --shadow-glow: 0 10px 30px rgba(253, 232, 233, 0.6);
+  
+  --glass-bg: rgba(255, 255, 255, 0.85);
+  --glass-border: 1px solid rgba(255, 255, 255, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+input {
+  font-family: inherit;
+}
+
+/* Animations */
+@keyframes float {
+  0% { transform: translateY(0px) scale(1); }
+  50% { transform: translateY(-15px) scale(1.02); }
+  100% { transform: translateY(0px) scale(1); }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
